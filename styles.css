@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 10rem 5rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgba(0,0,0,0.4);
+}
+
+h1
+{
+  font-size: 12rem;
+  letter-spacing: .5rem;
+}
+
+h2
+{
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+h2 + h1,
+h1 + .loader
+{
+  margin-top: 3rem;
+}
+
+.answer,
+.loader {
+  display: none;
+}
+
+body.pizga {
+  background-color: #d8fdff;
+}
+
+body.nie-pizga {
+  background-color: #ffe9d1;
+}
+
+body.pizga .answer--yes {
+  display: block;
+}
+
+body.nie-pizga .answer--no {
+  display: block;
+}
+
+body.pizga h1,
+body.nie-pizga h1 {
+  color: rgba(0,0,0,0.65);
+}
+
+body.is-loading .loader {
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+
+/* Loader */
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.loader {
+  position: relative;
+}
+
+.loader,
+.loader:before {
+  width: 10rem;
+  height: 10rem;
+}
+
+.loader:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border-top: .5rem solid rgba(0,0,0,0.15);
+  border-right: .5rem solid transparent;
+  animation: spinner .6s linear infinite;
+  backface-visibility: hidden;
+  margin-top: -5rem;
+  margin-left: -5rem;
+}
