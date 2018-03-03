@@ -81,7 +81,7 @@
       pizgaThreshold:      pizgaThreshold
     };
   };
-return;
+
   if ('geolocation' in navigator) {
     window.weatherApiCallback = weatherApiCallback;
     window.czyPizga = czyPizga();
