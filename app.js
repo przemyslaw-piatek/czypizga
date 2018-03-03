@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var pizgaThreshold = 5;
+  var pizgaThreshold = 10;
 
   var ui = {
     $apiRequestScript: null,
