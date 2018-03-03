@@ -5,7 +5,7 @@
     <title>Czy pizga?</title>
 
     <script>
-      if (location.protocol !== 'https:') {
+      if (location.protocol !== 'https:' && location.href.indexOf('localhost') < 0) {
         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
       }
     </script>
@@ -46,6 +46,18 @@
     <h1 class="answer answer--yes">TAK</h1>
     <h1 class="answer answer--no">NIE</h1>
     <div class="loader"></div>
+
+    <div class="ads">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-2410629136121982"
+          data-ad-slot="2337698351"
+          data-ad-format="auto"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
 
     <script src="app.js"></script>
   </body>

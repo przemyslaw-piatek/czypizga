@@ -93,3 +93,8 @@ body.is-loading .loader {
   margin-top: -5rem;
   margin-left: -5rem;
 }
+
+.ads {
+  max-width: 800px;
+  margin: 10rem auto 0;
+}
